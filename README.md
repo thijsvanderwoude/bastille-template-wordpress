@@ -12,6 +12,7 @@ ishmael ~ # bastille bootstrap https://github.com/BastilleBSD-Templates/nginx
 ## apply
 
 ```shell
-ishmael ~ # bastille template TARGET BastilleBSD-Templates/nginx-proxy
+ishmael ~ # bastille template TARGET BastilleBSD-Templates/nginx
+
 ```
 
