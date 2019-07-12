@@ -1,5 +1,7 @@
 # Bastille template: nginx-proxy
 
+ STATUS: Testing
+
 This template installs and enables nginx. Configuration is minimal and answers
 on localhost and hostname
 
