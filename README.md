@@ -1,20 +1,18 @@
-# Bastille template: nginx-proxy
+## Status
+[![pipeline status](https://gitlab.com/bastillebsd-templates/nginx/badges/master/pipeline.svg)](https://gitlab.com/bastillebsd-templates/nginx/commits/master)
 
- STATUS: Testing
+## nginx
+Bastille template to bootstrap nginx
 
-This template installs and enables nginx. Configuration is minimal and answers
-on localhost and hostname
-
-## usage
-
-```shell
-ishmael ~ # bastille bootstrap https://github.com/BastilleBSD-Templates/nginx
-```
-
-## apply
+## Bootstrap
 
 ```shell
-ishmael ~ # bastille template TARGET BastilleBSD-Templates/nginx
-
+bastille bootstrap https://gitlab.com/bastillebsd-templates/nginx
 ```
 
+## Usage
+
+```shell
+bastille template TARGET bastillebsd-templates/nginx
+
+```

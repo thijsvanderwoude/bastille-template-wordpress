@@ -1,1 +1,1 @@
-nginx -t && service nginx restart
+nginx -t
