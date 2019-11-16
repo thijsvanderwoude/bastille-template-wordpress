@@ -13,18 +13,16 @@ sed -i.orig s#password_here#$BOOTSTRAP_TOKEN# /root/wordpress.sql
 sed -i.orig s#username_here#wpuser# /usr/local/www/wordpress/wp-config.php
 sed -i.orig s#password_here#$BOOTSTRAP_TOKEN# /usr/local/www/wordpress/wp-config.php
 
-echo "Two lines should display below"
+echo "wp-config.php:"
 grep $BOOTSTRAP_TOKEN /usr/local/www/wordpress/wp-config.php
+echo "database password:"
 grep $BOOTSTRAP_TOKEN /root/wordpress.sql
-echo "Two lines should display above"
 
 ## import database
 mysql < /root/wordpress.sql
 
 ## cleanup
-rm /root/wordpress.sql{,.orig}
-rm /root/bootstrap-wp.sh
+rm /root/wordpress.sql
+rm /root/wordpress.sql.orig
 rm /usr/local/www/wordpress/wp-config.php.orig
-
-## validate nginx configuration
-nginx -t
+rm /root/bootstrap-wp.sh
