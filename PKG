@@ -1,1 +1,1 @@
-wordpress nginx mariadb104-server php74 php74-mysqli
+wordpress nginx mariadb104-server php72 php72-extensions

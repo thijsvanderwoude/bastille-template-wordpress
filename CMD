@@ -1,7 +1,1 @@
-export BOOTSTRAP_TOKEN=$(openssl rand -base64 18)
-sed -i 's/password_here/"${BOOTSTRAP_TOKEN}"/' /root/wordpress.sql
-cp /usr/local/www/wordpress/wp-config-sample.php /usr/local/www/wordpress/wp-config.php
-sed -i 's/username_here/wpuser/' /usr/local/www/wordpress/wp-config.php
-sed -i 's/password_here/"${BOOTSTRAP_TOKEN}"/' /usr/local/www/wordpress/wp-config.php
-mysql < /root/wordpress.sql
-nginx -t
+/root/bootstrap-wp.sh
