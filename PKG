@@ -1,1 +1,1 @@
-nginx
+wordpress nginx mariadb104-server php74 php74-mysql php74-xml php74-hash php74-gd php74-curl php74-tokenizer php74-zlib php74-zip

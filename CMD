@@ -1,1 +1,4 @@
+export BOOTSTRAP_TOKEN=$(openssl rand -base64 18)
+sed -i 's/p@ssw0rd/"${BOOTSTRAP_TOKEN}"/' /root/wordpress.sql
+mysql < /root/wordpress.sql
 nginx -t
