@@ -1,3 +1,0 @@
-mysql_enable=YES
-php_fpm_enable="YES"
-nginx_enable=YES
