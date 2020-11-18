@@ -8,9 +8,6 @@ PKG wordpress php74-curl php74-dom php74-fileinfo php74-exif php74-json php74-mb
 #SYSRC php_fpm_enable=YES
 #SYSRC nginx_enable=YES
 
-OVERLAY usr
-OVERLAY root
-
 CMD /root/bootstrap-wp.sh
 
 # SERVICE mysql-server start
