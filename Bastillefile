@@ -12,4 +12,3 @@ SERVICE php-fpm start
 SERVICE nginx start
 
 CMD /root/bootstrap-wp.sh
-
