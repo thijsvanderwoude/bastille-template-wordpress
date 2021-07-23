@@ -10,7 +10,7 @@ bastille_template_test:
     - doas bastille bootstrap "${CI_PROJECT_URL}"
     - doas bastille create 11-4-jail 11.4-RELEASE 10.17.89.114
     - doas bastille create 12-2-jail 12.2-RELEASE 10.17.89.122
-    - doas bastille create 13-0-jail 13.0-RELEASE 10.17.89.114
+    - doas bastille create 13-0-jail 13.0-RELEASE 10.17.89.130
     - doas bastille template ALL "${CI_PROJECT_NAMESPACE}"/"${CI_PROJECT_NAME}"
     - doas bastille cmd ALL freebsd-version
     - doas bastille cmd ALL sysrc -ae
