@@ -25,7 +25,7 @@ bastille bootstrap https://github.com/thijsvanderwoude/bastille-template-wordpre
 
 ## Usage
 ```shell
-bastille template TARGET thijsvanderwoude/bastille-wordpress-template
+bastille template TARGET thijsvanderwoude/bastille-template-wordpress
 ```
 Then, inside of jail, in the /usr/local/www/wordpress directory you have to run:
 ```shell
