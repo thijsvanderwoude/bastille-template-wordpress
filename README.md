@@ -32,8 +32,6 @@ Then, inside of jail, in the /usr/local/www/wordpress directory you have to run:
 wp core install --url=<url> --title="<site-title>" --admin_user=<username> --admin_password=<password> --admin_email=<email>
 ```
 
-And create the salts as told in wp-config.php.
-
 ## Updating
 ```shell
 bastille bootstrap https://github.com/thijsvanderwoude/bastille-template-wordpress update

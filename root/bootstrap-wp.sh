@@ -9,7 +9,7 @@ mv wp-cli.phar /usr/local/bin/wp
 
 # Install wp-cli autocompletion. MIGHT NEED UPDATING PER WP-CLI VERSION!
 curl https://raw.githubusercontent.com/wp-cli/wp-cli/v2.6.0/utils/wp-completion.bash > /root/wp-completion.bash
-echo -e "source /root/wp-completion.bash\nalias wp=\"wp --allow-root\""
+echo -e "source /root/wp-completion.bash\nalias wp=\"wp --allow-root\"" > .bash_profile
 
 ## Download latest version of WordPress.
 wp --allow-root core download --path=/usr/local/www/wordpress
@@ -30,7 +30,6 @@ wp --allow-root config create \
 wp --allow-root db create
 
 ## Notify that the salts should still be done and the install finalized.
-echo '!!! IMPORTANT: you should set the salts as shown in wp-config.php!'
 echo '!!! IMPORTANT: run:'
 echo 'wp core install --url=<url> --title="<site-title>" --admin_user=<username> --admin_password=<password> --admin_email=<email>'
 echo 'to finalize installation.'
