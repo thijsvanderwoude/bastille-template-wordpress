@@ -12,10 +12,11 @@ mv wp-cli.phar /usr/local/bin/wp
 
 # Install wp-cli autocompletion. MIGHT NEED UPDATING PER WP-CLI VERSION!
 curl https://raw.githubusercontent.com/wp-cli/wp-cli/v2.6.0/utils/wp-completion.bash > /root/wp-completion.bash
-echo "source /root/wp-completion.bash" > /root/.bash_profile
+echo 'source /root/wp-completion.bash' > /root/.bash_profile
+echo 'alias wp="wp --allow-root"' > /root/.bash_profile
 
 ## Download latest version of WordPress.
-wp core download --path=/usr/local/www/wordpress
+wp --allow-root core download --path=/usr/local/www/wordpress
 
 cd /usr/local/www/wordpress
 
@@ -23,14 +24,14 @@ cd /usr/local/www/wordpress
 BOOTSTRAP_TOKEN=$(openssl rand -hex 18)
 
 # Create wp-config.php.
-wp config create \
+wp --allow-root config create \
 --dbname=wordpress \
 --dbuser=wp_user \
 --dbpass=$BOOTSTRAP_TOKEN \
 --dbhost=localhost:/var/run/mysql/mysql.sock
 
 ## Create database.
-wp db create
+wp --allow-root db create
 
 ## Notify that the salts should still be done and the install finalized.
 echo '!!! IMPORTANT: you should set the salts as shown in wp-config.php!'
