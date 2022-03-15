@@ -11,7 +11,7 @@ These are some of the changes I've made.
 - WordPress database credentials are now in line with the standard wp-config.php.
 
 ### Nginx
-- Tuned nginx for gip compression by default.
+- Tuned nginx for gzip compression by default.
 
 ### Packages
 - Added git.
