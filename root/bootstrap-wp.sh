@@ -12,8 +12,7 @@ mv wp-cli.phar /usr/local/bin/wp
 
 # Install wp-cli autocompletion. MIGHT NEED UPDATING PER WP-CLI VERSION!
 curl https://raw.githubusercontent.com/wp-cli/wp-cli/v2.6.0/utils/wp-completion.bash > /root/wp-completion.bash
-echo 'source /root/wp-completion.bash' > /root/.bash_profile
-echo 'alias wp="wp --allow-root"' > /root/.bash_profile
+echo -e "source /root/wp-completion.bash\nalias wp=\"wp --allow-root\""
 
 ## Download latest version of WordPress.
 wp --allow-root core download --path=/usr/local/www/wordpress
