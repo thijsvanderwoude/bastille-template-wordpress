@@ -29,7 +29,7 @@ wp --allow-root db create --path=/usr/local/www/wordpress
 
 ## Notify that the salts should still be done and the install finalized.
 echo '!!! IMPORTANT: run:'
-echo 'wp core install --url=<url> --title="<site-title>" --admin_user=<username> --admin_password=<password> --admin_email=<email>'
+echo 'wp core install --path=/usr/local/www/wordpress --url=<url> --title="<site-title>" --admin_user=<username> --admin_password=<password> --admin_email=<email>'
 echo 'inside the jail to finalize installation.'
 
 ## cleanup

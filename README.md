@@ -29,7 +29,7 @@ bastille template TARGET thijsvanderwoude/bastille-template-wordpress
 ```
 Then, inside of jail, in the /usr/local/www/wordpress directory you have to run:
 ```shell
-wp core install --url=<url> --title="<site-title>" --admin_user=<username> --admin_password=<password> --admin_email=<email>
+wp core install --path=/usr/local/www/wordpress --url=<url> --title="<site-title>" --admin_user=<username> --admin_password=<password> --admin_email=<email>
 ```
 
 ## Updating
