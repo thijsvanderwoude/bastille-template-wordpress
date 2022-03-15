@@ -5,10 +5,15 @@ Let me know if you have a problem by creating an issue, I'll try to fix it.
 
 ## Changes
 These are some of the changes I've made.
+
+### WordPress
 - WordPress now accesses the database through a Unix socket instead of a TCP socket.
 - WordPress database credentials are now in line with the standard wp-config.php.
-- Removed wordpress package, instead it installs wp-cli, and through wp-cli it automatically downloads WordPress and handles the database creation.
-- Add bash and .bash_profile for easier maintenance with wp-autocompletion.bash.
+
+### Packages
+- Added git.
+- Removed wordpress package. Instead it installs wp-cli, and through wp-cli it downloads WordPress and creates the database.
+- Added bash. The install script also installs wp-autocompletion.bash.
 
 ## Bootstrap
 ```shell
