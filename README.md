@@ -1,8 +1,10 @@
-## Deployment Test Status
-[![pipeline status](https://gitlab.com/bastillebsd-templates/wordpress/badges/master/pipeline.svg)](https://gitlab.com/bastillebsd-templates/wordpress/commits/master)
+# bastille-template-wordpress
+Improved (for me) Bastille template to bootstrap Wordpress into a Bastille jail.
 
-# wordpress
-Bastille template to bootstrap Wordpress
+## Changes
+These are some of the changes I've made.
+- Removed wordpress package, instead it installs wp-cli, and through wp-cli it automatically installs WordPress.
+- Add bash and .bashrc for easier maintenance.
 
 ## Bootstrap
 ```shell
