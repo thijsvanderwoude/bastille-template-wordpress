@@ -20,11 +20,7 @@ cd /usr/local/www/wordpress
 BOOTSTRAP_TOKEN=$(openssl rand -hex 18)
 
 # Create wp-config.php.
-wp --allow-root config create \
---dbname=wordpress \
---dbuser=wp_user \
---dbpass=$BOOTSTRAP_TOKEN \
---dbhost=localhost:/var/run/mysql/mysql.sock
+wp --allow-root config create --dbname="wordpress" --dbuser="wp_user" --dbpass="$BOOTSTRAP_TOKEN" --dbhost="localhost:/var/run/mysql/mysql.sock"
 
 ## Create database.
 wp --allow-root db create
