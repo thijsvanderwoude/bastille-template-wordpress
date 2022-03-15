@@ -10,6 +10,9 @@ These are some of the changes I've made.
 - WordPress now accesses the database through a Unix socket instead of a TCP socket.
 - WordPress database credentials are now in line with the standard wp-config.php.
 
+### Nginx
+- Tuned nginx for gip compression by default.
+
 ### Packages
 - Added git.
 - Removed wordpress package. Instead it installs wp-cli, and through wp-cli it downloads WordPress and creates the database.
