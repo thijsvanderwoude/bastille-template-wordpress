@@ -17,7 +17,11 @@ wp --allow-root core download --path=/usr/local/www/wordpress
 ## set random token string
 BOOTSTRAP_TOKEN=$(openssl rand -hex 18)
 
-# Create wp-config.php.
+## Create user
+echo "CREATE USER wp_user@localhost IDENTIFIED BY '$BOOTSTRAP_TOKEN'; GRANT ALL PRIVILEGES ON *.* TO wp_user@localhost;" | mysql
+
+
+## Create wp-config.php.
 wp --allow-root config create --path=/usr/local/www/wordpress --dbname="wordpress" --dbuser="wp_user" --dbpass="$BOOTSTRAP_TOKEN" --dbhost="localhost:/var/run/mysql/mysql.sock"
 
 ## Create database.
@@ -26,7 +30,7 @@ wp --allow-root db create --path=/usr/local/www/wordpress
 ## Notify that the salts should still be done and the install finalized.
 echo '!!! IMPORTANT: run:'
 echo 'wp core install --url=<url> --title="<site-title>" --admin_user=<username> --admin_password=<password> --admin_email=<email>'
-echo 'to finalize installation.'
+echo 'inside the jail to finalize installation.'
 
 ## cleanup
 rm /root/bootstrap-wp.sh
