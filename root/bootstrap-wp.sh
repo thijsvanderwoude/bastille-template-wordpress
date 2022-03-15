@@ -1,7 +1,4 @@
 #!/bin/sh
-# (christer.edwards@gmail.com)
-# bootstrap wordpress database and token
-
 ## Set bash as standard shell.
 chsh -s /usr/local/bin/bash root
 
