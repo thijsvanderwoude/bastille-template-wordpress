@@ -1,4 +1,4 @@
-PKG bash curl git mariadb106-server nginx php81-curl php81-dom php81-fileinfo php81-exif php81-json php81-mbstring php81-extensions php81-mysqli php81-openssl php81-pecl-libsodium php81-xml php81-zip php81-filter php81-gd php81-iconv php81-simplexml php81-xmlreader php81-zlib php81-pecl-imagick php81-pecl-mcrypt php81-bcmath php81-intl
+PKG bash curl git mariadb106-server nginx php81-curl php81-dom php81-fileinfo php81-exif php81-mbstring php81-extensions php81-mysqli php81-openssl php81-pecl-libsodium php81-xml php81-zip php81-filter php81-gd php81-iconv php81-simplexml php81-xmlreader php81-zlib php81-pecl-imagick php81-pecl-mcrypt php81-bcmath php81-intl
 
 CP usr /
 CP root /
